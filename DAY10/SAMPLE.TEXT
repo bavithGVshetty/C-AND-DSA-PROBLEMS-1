@@ -1,0 +1,11 @@
+DFS
+1.Start from source vertex.
+2.Visit it and mark as visited.
+3.Recursivly go to an unvisited neighbor.
+4.Continue till you reach the dead end
+
+BFS
+1.Starts from source node
+2.visit every vertex and mark as visited
+3.add all its unvisited neighbor to a queue
+4.We can use queue data structure

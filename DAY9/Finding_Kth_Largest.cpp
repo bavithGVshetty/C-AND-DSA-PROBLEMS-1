@@ -1,0 +1,21 @@
+#include<iostream>
+#include<queue>
+using namespace std;
+int kthLargeElement(int arr[],int n,int k){
+    // implementation min-heap
+    priority_queue<int,vector<int>,greater<int>> pq;
+    for(int i=0;i<n;i++){
+        pq.push(arr[i]);
+        if(pq.size()>k){//Remove largest if >k
+            pq.pop();
+        }      
+}
+return pq.top();
+}
+int main(){
+    int arr[]={3,2,1,5,6,4};
+    int n=sizeof(arr)/sizeof(arr[0]);
+    int k=2;
+    int result=kthLargeElement(arr,n,k);
+    cout<<"The result: "<<result<<endl;
+}
